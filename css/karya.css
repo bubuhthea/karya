@@ -1,0 +1,125 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+@font-face {
+  font-family: champagne;
+  src:url(../fonts/cac_champagne.ttf);
+}
+@font-face {
+  font-family: pb;
+  src:url(../fonts/printBold.otf);
+}
+@font-face {
+  font-family: pc;
+  src:url(../fonts/printClearly.otf);
+}
+@font-face {
+  font-family: pd;
+  src:url(../fonts/printDashed.otf);
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  font-family: pc;
+  /*margin-bottom: 60px;*/
+  background-image: url(../img/bg.png);
+}
+h1, h2, h3, h4, h4 {
+  font-family: champagne;
+}
+.footer {
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 100%;
+  /*padding: 0 15px;*/
+  margin-top: -40px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+#recent-works .col-xs-12.col-sm-4.col-md-3{
+  padding: 0;
+  margin-top: 10px;
+}
+
+#recent-works{
+    padding-bottom: 70px;
+}
+
+.recent-work-wrap {
+  position: relative;
+}
+
+.recent-work-wrap img{
+  width: 100%;
+}
+
+.recent-work-wrap .recent-work-inner{
+  top: 0;
+  background: transparent;
+  opacity: .8;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.recent-work-wrap .recent-work-inner h3{
+  margin: 10px 0;
+}
+
+.recent-work-wrap .recent-work-inner h3 a{
+  font-size: 24px;
+  color: #fff;
+}
+
+.recent-work-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 0;
+  background: #69ab84;
+  color: #fff;
+  vertical-align: middle;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;  
+  padding: 30px;
+}
+
+.recent-work-wrap .overlay .preview {
+  bottom: 0;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 0;
+  background: transparent;
+  text-align: center;
+  color: #fff;
+}
+
+.recent-work-wrap:hover .overlay {
+  opacity: 1;
+}
+.kepala {
+  background-color: #69ca86;
+  background-image: url(../img/bghead.png);
+  -webkit-box-shadow: 3px 3px 3px 3px #69ab84;
+  -moz-box-shadow: 3px 3px 3px 3px #69ab84;
+  box-shadow: 3px 3px 3px 3px #69ab84;
+}
